@@ -21,6 +21,8 @@ COPY . .
 # List the contents again to ensure everything is copied correctly
 RUN echo "Listing contents after copying source files:" && ls -la
 
+ENV DB_URL=mongodb+srv://lakshay:mongopassword@register.b19tnco.mongodb.net/?retryWrites=true&w=majority&appName=register
+ENV PORT=5001
 # Expose the application port
 EXPOSE 5001
 
