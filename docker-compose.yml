@@ -1,6 +1,6 @@
 services:
   web:
-    build: lakshaybogal/docker-app:latest
+    image: lakshaybogal/docker-app:latest
     ports:
       - "80:5001"
     environment:
