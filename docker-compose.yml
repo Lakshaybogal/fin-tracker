@@ -1,0 +1,8 @@
+services:
+  web:
+    build: lakshaybogal/docker-app:latest
+    ports:
+      - "80:5001"
+    environment:
+      - DB_URL=mongodb+srv://lakshay:mongopassword@register.b19tnco.mongodb.net/?retryWrites=true&w=majority&appName=register
+      - PORT=5001
