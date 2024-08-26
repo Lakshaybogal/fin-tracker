@@ -9,7 +9,7 @@ const routes = require('./routes/routes');
 app.use(cors());
 app.use(express.json());
 app.get('/', (req, res) => {
-    return res.send('Jai Mata Di Lakshay bogal').status(200);
+    return res.send('Jai Mata Di').status(200);
 })
 app.use('/api/', routes);
 
